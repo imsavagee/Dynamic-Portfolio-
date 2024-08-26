@@ -53,7 +53,7 @@ function Hero() {
                         <motion.button variants={textVariants}> <a href='#Portfolio'>  See my Latest Works</a></motion.button>
                         <motion.button variants={textVariants}> <a href="#Contact">Contact Me</a></motion.button>
                     </motion.div>
-                    <motion.img src='/scroll.png' alt='scroll' variants={textVariants} animate="scrollBtn" />
+                    <motion.img src='./scroll.png' alt='scroll' variants={textVariants} animate="scrollBtn" />
                 </motion.div>
             </div>
             <motion.div className="slidingTxtContainer" variants={sliderVariants} initial="initial" animate="animate">
