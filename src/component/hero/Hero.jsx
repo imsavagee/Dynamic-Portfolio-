@@ -60,7 +60,7 @@ function Hero() {
                 Writer Content Creator Influencer
             </motion.div>
             <div className="imgContainer">
-                <img src='/hero.png' alt='heroImage' />
+                <img src='./hero.png' alt='heroImage' />
             </div>
         </div>
     )
