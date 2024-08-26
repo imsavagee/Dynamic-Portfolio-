@@ -1,0 +1,121 @@
+@import "../../app.scss";
+
+
+.contact {
+    max-width: 1066px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    @include mobile {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .txtContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @include mobile {
+            gap: 20px;
+            text-align: center;
+            align-items: center;
+            margin-top: 70px;
+        }
+        @include tablet {
+            gap: 20px;
+            text-align: center;
+            align-items: center;
+
+        }
+
+        h1 {
+            font-size: 100px;
+            line-height: 88px;
+
+            @include mobile {
+                font-size: 36px;
+            }
+            @include tablet {
+                font-size: 65px;
+            }
+        }
+
+        span {
+            font-weight: lighter;
+        }
+    }
+
+    .formContainer {
+        flex: 1;
+        position: relative;
+
+        @include mobile {
+            padding: 50px;
+            width: 100%;
+        }
+        @include tablet {
+            padding: 30px;
+            width: 80%;
+            
+        }
+
+
+        .phoneSvg {
+            stroke: orange;
+            position: absolute;
+            margin: auto;
+            z-index: -1;
+
+            svg{
+                @include mobile {
+                    width: 90%;
+                }
+
+                @include tablet {
+                    width: 90%;
+                }
+                
+            }
+            
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            input,
+            textarea {
+                padding: 20px;
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                border-radius: 5px;
+
+
+                @include mobile {
+                    padding: 10px;
+                }
+            }
+
+            button {
+                padding: 20px;
+                border: none;
+                background-color: orange;
+                cursor: pointer;
+                font-weight: 500;
+
+                @include mobile {
+                    padding: 10px;
+                }
+
+            }
+        }
+    }
+}
